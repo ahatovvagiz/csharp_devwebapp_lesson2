@@ -17,7 +17,7 @@ namespace WebAppGeek.Data
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseNpgsql(_dbConnectionString).LogTo(Console.WriteLine);//UseLazyLoadingProxies().
-        //optionsBuilder.UseNpgsql("Host=localhost;Database=lesson5;Username=postgres;Password=example").UseLazyLoadingProxies();
+        //optionsBuilder.UseNpgsql("Host=localhost;Database=db;Username=postgres;Password=example").UseLazyLoadingProxies();
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<ProductGroup>(entity =>
