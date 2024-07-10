@@ -1,0 +1,6 @@
+@WebAppGeek_HostAddress = http://localhost:5197
+
+GET {{WebAppGeek_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
